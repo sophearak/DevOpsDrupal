@@ -1,0 +1,18 @@
+---
+# application tasks to be customized and to run after the main provision
+
+- name: Downloading Drupal
+  shell: cd /var/www && drush dl --drupal-project-rename=drupal
+
+- name: Installing Drupal
+  shell: cd /var/www/drupal && drush si --db-url=mysql://drupal:drupal@localhost/drupal -y
+
+- name: Disable overlay
+  shell: cd /var/www/drupal && drush pm-disable overlay toolbar -y
+
+- name: Download common modules
+  shell: cd /var/www/drupal && drush pm-download views ctools pathauto token jquery_update admin_menu
+- name: Enable common modules
+  shell: cd /var/www/drupal && drush en views pathauto jquery_update admin_menu -y
+
+# drush uli for generate link to login first time

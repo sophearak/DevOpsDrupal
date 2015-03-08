@@ -1,0 +1,1 @@
+192.168.0.103	ansible_ssh_user=vagrant	ansible_ssh_private_key_file=/Users/Sophearak/.vagrant.d/insecure_private_key

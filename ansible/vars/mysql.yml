@@ -1,0 +1,5 @@
+mysql:
+    root_password: drupal
+    user: drupal
+    password: drupal
+    database: drupal

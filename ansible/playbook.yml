@@ -1,0 +1,22 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    web_server: nginxphp
+    hostname: drupal
+    servername: drupal.dev
+    timezone: UTC
+  vars_files:
+    - vars/mysql.yml
+    - vars/common.yml
+    - vars/drush.yml
+    - [ "vars/nginxphp.yml", "vars/ws_defaults.yml" ]
+  roles:
+    - init
+    - php5-cli
+    - nginx
+    - php5-fpm
+    - mysql
+    - phpcommon
+    - drush
+    - app

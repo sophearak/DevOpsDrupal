@@ -1,0 +1,3 @@
+drush_install_mode: git
+drushrc:
+  root: /var/www/drupal
