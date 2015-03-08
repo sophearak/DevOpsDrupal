@@ -11,8 +11,8 @@
   shell: cd /var/www/drupal && drush pm-disable overlay toolbar -y
 
 - name: Download common modules
-  shell: cd /var/www/drupal && drush pm-download views ctools pathauto token jquery_update admin_menu
+  shell: cd /var/www/drupal && drush pm-download views ctools pathauto token jquery_update admin_menu adminimal_theme adminimal_admin_menu
 - name: Enable common modules
-  shell: cd /var/www/drupal && drush en views pathauto jquery_update admin_menu -y
+  shell: cd /var/www/drupal && drush en views pathauto jquery_update admin_menu adminimal_theme adminimal_admin_menu -y
 
 # drush uli for generate link to login first time
