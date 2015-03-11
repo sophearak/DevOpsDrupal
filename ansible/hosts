@@ -1,1 +1,1 @@
-192.168.178.83	ansible_ssh_user=vagrant	ansible_ssh_private_key_file=/Users/sophearak/Documents/Sophearak/sophearak.com/.vagrant/machines/default/virtualbox/private_key
+192.168.178.84	ansible_ssh_user=vagrant	ansible_ssh_private_key_file=/Users/Sophearak/.vagrant.d/insecure_private_key

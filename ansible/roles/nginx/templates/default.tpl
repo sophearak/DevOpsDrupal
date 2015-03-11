@@ -4,6 +4,8 @@ server {
 
     server_name {{ servername }};
 
+    client_max_body_size 2M;
+
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
