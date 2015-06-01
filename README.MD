@@ -7,6 +7,9 @@ This setup have out of the box:
 - Drush
 - Drupal
 
+
+## How to use?
+
 1. Make you have Vagrant and Ansible install
 2. Clone the repo `git clone https://github.com/sophearak/DevOpsDrupal.git`
 3. Change directory `cd DevOpsDrupal`
