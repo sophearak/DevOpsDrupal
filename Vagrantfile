@@ -6,13 +6,12 @@ Vagrant.configure("2") do |config|
         v.name = "trusty"
         v.customize [
             "modifyvm", :id,
-            "--name", "trusty",
             "--memory", 1024,
             "--cpus", 1,
         ]
     end
 
-    config.vm.box = "trusty64"
+    config.vm.box = "base"
 
     config.vm.network "forwarded_port", guest: 80, host: 80
 
